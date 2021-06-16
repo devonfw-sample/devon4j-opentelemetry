@@ -25,5 +25,6 @@ The backend of MyThaiStar a devon reference application can be booted to send th
 ![image](https://user-images.githubusercontent.com/63033584/122231142-dca4a400-ced7-11eb-875e-0a61dcddb030.png)
 
 3. From any rest client or a postman we can hit the http://localhost:8081/mythaistar/services/rest/dishmanagement/v1/dish/search to generate traffic.
+Note:- You might face any issues while testing this due to SpringSecurity login configuration. 
 
 4. Then Jaegar and Zipkin endpoint can be accessed to visualize the trace information from MyThaiStar application.
