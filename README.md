@@ -40,7 +40,26 @@ Follow the below steps:
 ![image](https://user-images.githubusercontent.com/63033584/122231142-dca4a400-ced7-11eb-875e-0a61dcddb030.png)
 
 3. From any rest client or a postman we can hit the http://localhost:8081/mythaistar/services/rest/dishmanagement/v1/dish/search to generate traffic.
-Note:- You might face any issues while testing this due to SpringSecurity login configuration. 
+Sample JSON request: 
+```
+{
+    "categories": [],
+    "searchBy": "",
+    "pageable": {
+        "pageSize": 8,
+        "pageNumber": 0,
+        "sort": [
+            {
+                "property": "price",
+                "direction": "DESC"
+            }
+        ]
+    },
+    "maxPrice": null,
+    "minLikes": null
+}
+```
+Note:- You might have to provide the login while testing this in local due to SpringSecurity login configuration in MyThaiStar.
 
 4. Then Jaegar and Zipkin endpoint can be accessed to visualize the trace information from MyThaiStar application.
 **Zipkin endpoint http://localhost:9411/**
