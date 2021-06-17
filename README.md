@@ -1,4 +1,4 @@
-# devon4j-opentelemetry-sample
+# devon4j-opentelemetry
 
 ## What is OpenTelemetry
 It is an observability framework for distributed systems which helps to monitor your microservices, REST APIs.
