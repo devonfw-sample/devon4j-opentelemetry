@@ -1,4 +1,4 @@
-# devon4j-sample-otelcollector
+# devon4j-opentelemetry-sample
 
 ## What is OpenTelemetry
 It is an observability framework for cloud-native software which helps to monitor your microservices.
