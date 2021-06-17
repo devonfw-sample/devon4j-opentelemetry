@@ -58,3 +58,10 @@ Note:- You might face any issues while testing this due to SpringSecurity login 
 
 
 
+_Relevant components:_
+
+* _https://github.com/open-telemetry/opentelemetry-collector[*OpenTelemetry Collector*]_
+* _https://www.jaegertracing.io/[*Jaeger*]_
+* _https://zipkin.io/[*Zipkin*]_
+* _https://github.com/VictoriaMetrics/VictoriaMetrics[*VictoriaMetrics*]_
+* _https://grafana.com/[*Grafana*]_
