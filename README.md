@@ -50,7 +50,7 @@ Below are the steps:-
 The backend of MyThaiStar a devon reference application can be booted to send the trace information to the OpenTelemetry Collector.
 
 Follow the below steps:
-1) Download the latest OpenTelemetry JavaAgent JAR file from _https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar[*here]_
+1) Download the latest OpenTelemetry JavaAgent JAR file from [*here*](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar)
 2. Boot the SpringBootApp by passing the below JVM arguments.
 ```
 -javaagent:agent/opentelemetry-javaagent-all.jar -Dotel.traces.exporter=otlp -Dotel.exporter.otlp.endpoint=http://localhost:4317 -Dotel.resource.attributes=service.name=mtsj -Dotel.javaagent.debug=false -Dotel.metrics.exporter=none
