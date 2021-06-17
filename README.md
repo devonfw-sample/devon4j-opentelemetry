@@ -14,9 +14,13 @@ The collector can be spinned up by using a simple command
 docker-compose up
 ```
 And can be accessible at http://localhost:4317
+
 Jaegar endpoint http://localhost:16686/
+
 Zipkin endpoint http://localhost:9411/
+
 Prometheus endpoint http://localhost:9090/
+
 
 Note:-
 1) Apart from creating a OpenTelemetry collector this is also a sample devon4j project which has open telemetry agent that exports traces/spans to the opentelemetry collector.
