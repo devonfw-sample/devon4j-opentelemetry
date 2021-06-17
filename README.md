@@ -38,7 +38,7 @@ This is rather straight forward and faster approach to integrate any SpringBoot 
 
 Below are the steps:-
 
-1) Download the latest OpenTelemetry JavaAgent JAR file from _https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar[*here*]_
+1) Download the latest OpenTelemetry JavaAgent JAR file from https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar[*here*]
 2) The devon4j SpringBootApp can be booted by passing the below JVM arguments.
 ```
 -javaagent:agent/opentelemetry-javaagent-all.jar -Dotel.traces.exporter=otlp -Dotel.exporter.otlp.endpoint=http://localhost:4317 -Dotel.resource.attributes=service.name=mtsj -Dotel.javaagent.debug=false -Dotel.metrics.exporter=none
