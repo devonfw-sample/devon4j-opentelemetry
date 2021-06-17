@@ -5,7 +5,7 @@ It is an observability framework for distributed systems which helps to monitor 
 It is a collection of tools, APIs, and SDKs. You can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) for analysis in order to understand your software's performance and behavior.
 
 ### Open Telemetry Collector
-This is a sample devon4j project which spins up the OpenTelemetry Collector with telemetry backends such as Jaegar, Zipkin & Prometheus. This can be used to receive the traces/spans from applications through OpenTelemetry agents.
+This is a sample devon4j project which spins up the OpenTelemetry Collector with telemetry backends such as Jaegar, Zipkin & Prometheus. This can be used to receive the traces/spans from applications through OpenTelemetry agents. The below image represents the functionality of OpenTelemetry with only a few telemetry backends though OpenTelemetry supports many other. The Collector collects the telemetry data and exports it to various backends. 
 
 ![opentel (1)](https://user-images.githubusercontent.com/63033584/122399442-6ddb4f80-cf98-11eb-8029-a011de5b8870.png)
 
