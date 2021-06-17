@@ -82,20 +82,18 @@ Sample JSON request:
 Note:- You might have to provide the login while testing this in local due to SpringSecurity login configuration in MyThaiStar.
 
 4. Then Jaegar and Zipkin endpoint can be accessed to visualize the trace information from MyThaiStar application.
-**Zipkin endpoint http://localhost:9411/**
+### Zipkin endpoint http://localhost:9411/
 
 ![image](https://user-images.githubusercontent.com/63033584/122234808-cc41f880-ceda-11eb-8813-d440ad6431bb.png)
 
 
-**Jaegar endpoint http://localhost:16686/**
+### Jaegar endpoint http://localhost:16686/
 
 ![image](https://user-images.githubusercontent.com/63033584/122234896-de239b80-ceda-11eb-88dc-132443a40118.png)
 
-**Drill down one more level**
+### Drill down one more level
 
 ![image](https://user-images.githubusercontent.com/63033584/122236462-28594c80-cedc-11eb-898a-0bd46be0b7bd.png)
-
-_This sample will continue to evolve as we investigate different ways to improve of using OpenTelemetry and implement the same._
 
 _Relevant components:_
 
@@ -104,3 +102,7 @@ _Relevant components:_
 * _https://zipkin.io/[*Zipkin*]_
 * _https://github.com/VictoriaMetrics/VictoriaMetrics[*VictoriaMetrics*]_
 * _https://grafana.com/[*Grafana*]_
+
+This sample will continue to evolve as we investigate different ways to improve of using OpenTelemetry and implement the same.
+
+
