@@ -9,7 +9,7 @@ This is a sample devon4j project which spins up the OpenTelemetry Collector with
 
 ![Opentelemetry_Arch](https://user-images.githubusercontent.com/63033584/122336500-993f4980-cf5a-11eb-9d03-1355ab099734.png)
 
-The collector can be spinned up by using a simple command 
+The collector can be spinned up by using a simple command from the parent directory once you clone this repository. 
 ```
 docker-compose up
 ```
