@@ -7,7 +7,8 @@ It is a collection of tools, APIs, and SDKs. You can use it to instrument, gener
 ### Open Telemetry Collector
 This is a sample devon4j project which spins up the OpenTelemetry Collector with telemetry backends such as Jaegar, Zipkin & Prometheus. This can be used to receive the traces/spans from applications through OpenTelemetry agents.
 
-![Opentelemetry_Arch](https://user-images.githubusercontent.com/63033584/122336500-993f4980-cf5a-11eb-9d03-1355ab099734.png)
+![opentel](https://user-images.githubusercontent.com/63033584/122399267-42f0fb80-cf98-11eb-9217-9da92d371b32.png)
+
 
 The collector can be spinned up by using a simple command from the parent directory once you clone this repository. 
 ```
