@@ -97,3 +97,10 @@ Note:- You might have to provide the login while testing this in local due to Sp
 
 _This sample will continue to evolve as we investigate different ways to improve of using OpenTelemetry and implement the same._
 
+_Relevant components:_
+
+* _https://github.com/open-telemetry/opentelemetry-collector[*OpenTelemetry Collector*]_
+* _https://www.jaegertracing.io/[*Jaeger*]_
+* _https://zipkin.io/[*Zipkin*]_
+* _https://github.com/VictoriaMetrics/VictoriaMetrics[*VictoriaMetrics*]_
+* _https://grafana.com/[*Grafana*]_
