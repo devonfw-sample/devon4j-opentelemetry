@@ -1,7 +1,7 @@
 # devon4j-opentelemetry-sample
 
 ## What is OpenTelemetry
-It is an observability framework for cloud-native software which helps to monitor your microservices.
+It is an observability framework for distributed systems which helps to monitor your microservices, REST APIs.
 It is a collection of tools, APIs, and SDKs. You can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) for analysis in order to understand your software's performance and behavior.
 
 ### Open Telemetry Collector
@@ -22,20 +22,34 @@ Zipkin endpoint http://localhost:9411/
 Prometheus endpoint http://localhost:9090/
 
 
-Note:-
-1) Apart from creating a OpenTelemetry collector this is also a sample devon4j project which has open telemetry agent that exports traces/spans to the opentelemetry collector.
+## devon4j OpenTelemetry Integration
+
+Apart from creating a OpenTelemetry collector this is also a sample devon4j project which has open telemetry agent that exports traces/spans to the opentelemetry collector.
+
+To integrate OpenTelemetry with devon4j/any Spring Boot application we have 2 different ways
+1) Auto Instrumentation
+2) Manual Instrumentation
+
+This sample covers only Auto Instrumentation.
+
+### Auto Instrumentation
+This is rather straight forward and faster approach to integrate any SpringBoot application with OpenTelemetry.
+
+Below are the steps:-
+
+1) Download the latest OpenTelemetry JavaAgent JAR file from _https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar[*here]_
 2) The devon4j SpringBootApp can be booted by passing the below JVM arguments.
 ```
 -javaagent:agent/opentelemetry-javaagent-all.jar -Dotel.traces.exporter=otlp -Dotel.exporter.otlp.endpoint=http://localhost:4317 -Dotel.resource.attributes=service.name=mtsj -Dotel.javaagent.debug=false -Dotel.metrics.exporter=none
 ```
-3) After booting the application - this URL can be hit from a postman client to generate traffic - http://localhost:%app-port%/services/rest/employeemanagement/v1/employee/1234
-4) The trace information can be visualized in the Jaegar, Zipkin or any other telemetry backends. 
+3) After booting the application for this sample - this URL can be hit from a postman client to generate traffic - http://localhost:%app-port%/services/rest/employeemanagement/v1/employee/1234
+4) The trace information can be visualized in the Jaegar, Zipkin or any other telemetry backends using the above endpoints provided. Currently this sample is integrated with Jaegar and Zipkin. 
 
 ## MyThaiStar OpenTelemetry Integration
 The backend of MyThaiStar a devon reference application can be booted to send the trace information to the OpenTelemetry Collector.
 
 Follow the below steps:
-1. Download the latest OpenTelemetry JavaAgent JAR file from OpenTelemetry github pages and place it in core/agent folder under MyThaiStar parent directory.
+1) Download the latest OpenTelemetry JavaAgent JAR file from _https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar[*here]_
 2. Boot the SpringBootApp by passing the below JVM arguments.
 ```
 -javaagent:agent/opentelemetry-javaagent-all.jar -Dotel.traces.exporter=otlp -Dotel.exporter.otlp.endpoint=http://localhost:4317 -Dotel.resource.attributes=service.name=mtsj -Dotel.javaagent.debug=false -Dotel.metrics.exporter=none
