@@ -102,10 +102,10 @@ This sample will continue to evolve as we investigate different ways to improve 
 _Relevant components:_
 
 [*OpenTelemetry Collector*](https://github.com/open-telemetry/opentelemetry-collector)
-(https://www.jaegertracing.io/)[*Jaeger*]
-* _https://zipkin.io/[*Zipkin*]_
-* _https://github.com/VictoriaMetrics/VictoriaMetrics[*VictoriaMetrics*]_
-* _https://grafana.com/[*Grafana*]_
+[*Jaeger*](https://www.jaegertracing.io/)
+[*Zipkin*](https://zipkin.io/)
+[*VictoriaMetrics*](https://github.com/VictoriaMetrics/VictoriaMetrics)
+[*Grafana*](https://grafana.com)
 
 
 
